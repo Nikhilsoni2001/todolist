@@ -8,6 +8,7 @@ import { Todo } from 'src/app/Todo';
 })
 export class TodoItemComponent implements OnInit {
   @Input('todo') todo: Todo;
+  @Input('i') i: number;
   @Output() todoDelete: EventEmitter<Todo> = new EventEmitter();
   @Output() todoCheckbox: EventEmitter<Todo> = new EventEmitter();
   constructor() {}

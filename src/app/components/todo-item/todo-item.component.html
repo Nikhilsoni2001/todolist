@@ -8,8 +8,9 @@
       id="done"
       class="form-check-input"
       (click)="onCheckboxClick(todo)"
+      [checked]="!todo.active"
     />
-    <label for="done" class="form-check-label">Mark As Done</label>
+    <label for="done{{ i }}" class="form-check-label">Mark As Done</label>
   </div>
   <button class="btn btn-danger" (click)="onDelete(todo)">Delete</button>
 </div>
